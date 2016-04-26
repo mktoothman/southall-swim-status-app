@@ -1,3 +1,7 @@
+
+#pageone .ui-content {
+	font-family: 'Finger Paint', cursive, sans-serif;
+}
 img.displayed {
     display: block;
     margin-left: auto;
@@ -7,4 +11,43 @@ img.displayed {
 
 p.centertext {
 	text-align:center;
+}
+
+.ui-icon-home {
+	color: #E57DCB;
+	text-decoration: none;
+	margin-left: 10px;
+	font-size: 1.3em;
+	font-family: 'Finger Paint', cursive;
+}
+#pageone h1 {
+	font-family: 'Finger Paint', cursive, sans-serif;
+	text-align: center;
+}
+.ui-content h1 {
+	font-family: 'Finger Paint', cursive, sans-serif;
+	text-align: center;
+}
+.ui-content .ui-btn {
+	text-decoration: none;
+	font-family: 'Finger Paint', cursive, sans-serif;
+	color: #E57DCB;
+}
+#outer {
+    width:100%;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
