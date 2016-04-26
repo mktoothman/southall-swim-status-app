@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Southall Swim Status</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="themes/ssrc-custom-theme.css" />
+		<link rel="stylesheet" href="themes/ssrc-custom-theme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile.structure-1.3.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js"></script>
+	</head>
+
+<body>
+
+<div data-role="page" id="pageone">
+	<div data-role="header">
+		<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>SSS</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#pagetwo" data-transition="slidedown">Weather</a></li>
+				<li><a href="#pagethree" data-transition="slidedown">FaceTwit</a></li>
+				<li><a href="#pagefour" data-transition="slidedown">Poolside</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<p class="centertext"><em>SSS</em> Southall Swim Status: Explore what's happening <em>NOW</em> at Southall Swim Club</p>
+		<div data-role="controlgroup" data-type="vertical">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#pagetwo" data-role="button" class="ui-btn" data-transition="flow">Was that Thunder?</a></li>
+				<li><a href="#pagethree" data-role="button" class="ui-btn" data-transition="flow">Facebook or Twitter? Pick your poison.</a></li>
+				<li><a href="#pagefour" data-role="button" class="ui-btn" data-transition="flow">Knock knock. Who's There?</a></li>
+			</ul>
+		</div>
+		<img class="displayed" src="images/logo.png" alt="SSRC Logo" width="600px">
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div>
+
+<div data-role="page" id="pagetwo">
+	<div data-role="header">
+		<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>SSS - Weather!</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#pagetwo" data-transition="slidedown">Weather</a></li>
+				<li><a href="#pagethree" data-transition="slidedown">FaceTwit</a></li>
+				<li><a href="#pagefour" data-transition="slidedown">Poolside</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<h1>Current Weather Conditions</h1>
+		<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=35.813735&lon=-78.563455&name=Raleigh"> </iframe>
+		<p class="centertext"><small>or check out more details at</small></p>
+		<a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=KNCRALEI14" target="_blank"><img class="displayed" src="images/wunderground.png" width="250"></a></br>
+		<p class="centertext"><small><a href="https://www.wunderground.com/personal-weather-station/dashboard?ID=KNCRALEI14" target="_blank">Link</a> opens in browser window.</small></p>
+								    
+		<link rel="stylesheet" type="text/css" media="screen" href="http://img.weather.weatherbug.com/Style/stickers/v2/Stickers_125x125.css" /> 
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div>
+
+<div data-role="page" id="pagethree">
+	<div data-role="header">
+		<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>SSS - Virtually Speaking</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#pagetwo" data-transition="slidedown">Weather</a></li>
+				<li><a href="#pagethree" data-transition="slidedown">FaceTwit</a></li>
+				<li><a href="#pagefour" data-transition="slidedown">Poolside</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<h1>Chlorine Data (yeah, right!)</h1>
+		<p>Check out Southall's Facebook & Twitter feeds here!</p>
+		<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsouthallswimracquetclub%2F&tabs=timeline&width=300&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="635" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+		<hr>
+		<a class="twitter-timeline" href="https://twitter.com/SouthallSwim" data-widget-id="724335078831071233">Tweets by @SouthallSwim</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div>
+
+<div data-role="page" id="pagefour">
+	<div data-role="header">	
+		<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>SSS - Shark Pool, Anyone?</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#pagetwo" data-transition="slidedown">Weather</a></li>
+				<li><a href="#pagethree" data-transition="slidedown">FaceTwit</a></li>
+				<li><a href="#pagefour" data-transition="slidedown">Poolside</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<h1>Who, who-who who-who's at Southall?</h1>
+		<p>Want a playdate? Is the swim team practicing? Any groups overrunning the shelter?</p>
+		<script src="get_time.js"></script>
+		<div data-role="controlgroup" data-type="vertical">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#pagefive" class="ui-btn">Shark Pool, Anyone?</a></li>
+				<li><a href="#pagesix" class="ui-btn">Herding Seahorses</a></li>
+				<li><a href="#pageseven" class="ui-btn">Shelter Taken?</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div>
+
+<div data-role="page" data-dialog="true" id="pagefive">
+	<div data-role="header">
+	<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>Family Sign-Ins</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<p>Check Out our current family sign-ins (note: this only includes those families that have opted to make public their whereabouts)</p>
+		<div id="outer"><iframe src="https://docs.google.com/spreadsheets/d/1hs2H-_TgMqcy3u-uzrYvZlFrglFr4kL-nJ9XGs3wTEc/pubhtml?gid=516922782&amp;single=true&amp;widget=true&amp;headers=false" width="300" height="300"></iframe></div>
+		<hr>
+		<div id="outer"><iframe src="https://docs.google.com/forms/d/1MR3vx7dpvIuCupqXyZNjbzLRD1QHwaRrCAGkY_k43NI/viewform?embedded=true;width=300&amp;" width="300" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="pagesix">
+	<div data-role="header">
+	<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>Swim Team Calendar</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<p>Check the agenda to see if swim team is currently practicing or having a meet.</p>
+		<div id="outer">
+		<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=southallswim.com_7rqqnmekv3gjpkd4m5ppcamp7k%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<img class="displayed" src="images/swimmer.jpg" width="400"> 
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="pageseven">
+	<div data-role="header">
+	<a href="#pageone" class="ui-btn ui-btn-left ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>Party Calendar</h1>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a href="#" class="ui-btn" ui-icon-back data-rel="back">Back</a>
+		<p>Are there any groups currently using the shelter? Any socials goin' on? Check it out here!</p>
+		<div id="outer">
+		<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=250&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=southallswim.com_pqcmtb6fmj0qlmjnt8d8m885bg%40group.calendar.google.com&amp;color=%2328754E&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<img class="displayed" src="images/birthday.jpg" width="400">
+	</div>
+	<div data-role="footer">
+		<p class="centertext"><note>SSRC <a href="tel:919-231-3660" target="_blank">919-231-3600</a> <a href="http://southallswim.com" target="_blank">SouthallSwim.com</a></note></p>
+	</div>
+</div> 
+</body>
+</html>

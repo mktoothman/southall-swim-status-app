@@ -1,0 +1,10 @@
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 100%;
+}
+
+p.centertext {
+	text-align:center;
+}
